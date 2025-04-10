@@ -1,64 +1,24 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="app.js"></script>
-    <title>Feed - ClubeFy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spidergram</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <button class="back-button">🔙</button> 
-        <h1>ClubeFy</h1>
-        <button class="menu-button">☰</button> 
-    </header>
-
-    <section class="stories">
-        <div class="story">
-            <div class="story-img"></div>
-            <p>story</p>
-        </div>
-        <div class="story">
-            <div class="story-img"></div>
-            <p>story</p>
-        </div>
-        <div class="story">
-            <div class="story-img"></div>
-            <p>story</p>
-        </div>
-        <div class="story">
-            <div class="story-img"></div>
-            <p>story</p>
-        </div>
-        <div class="story">
-            <div class="story-img"></div>
-            <p>story</p>
-        </div>
-    </section>
-
-    <section class="post">
-        <div class="post-image"></div>
-        <div class="post-actions">
-            <button class="like-button"><img src="coracao.png" class="heart-icon" alt="Like"></button>
-            <button><img src="comment.png" class="comment-icon" alt="Comment"></button>
-            <button><img src="share.png" class="share-icon" alt="Share"></button>
-            <button class="save-button"><img class="save-icon" src="save.png" alt="Save"></button>
-        </div>
-        <p><strong>74 likes</strong></p>
-        <p><strong>yournamehere</strong> .</p>
-        <p><strong>marlijnvanderlans</strong> Mooi!</p>
-        <p><strong>thornebrandinganddesign</strong> Lovely airy brochure. A perfect example of white space used successfully</p>
-        <p class="date">June 7, 2021 - <span class="translate">View translation</span></p>
-    </section>
-
-    <footer>
-        <button> <img src="home.png" alt=""> </button>
-        <button> <img src="lupa.png" alt=""> </button>
-        <button> <img src="mais.png" alt=""> </button>
-        <button>❤️</button>
-        <button class="profile-button"></button>
-    </footer>
+  <div class="container">
+    <aside class="menu">
+      <h2>Menu</h2>
+      <button onclick="window.location.href='perfil.html'">Perfil</button>
+      <button onclick="window.location.href='novo-story.html'">Novo Story</button>
+      <button onclick="window.location.href='nova-publicacao.html'">Nova Publicação</button>
+    </aside>
+    <main>
+      <h1>Spidergram</h1>
+      <div id="publicacoesContainer" class="publicacoes"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
